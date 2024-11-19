@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KStore</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="menu-bar">
+  <div class="title"><h1>KStore</h1></div>
+  <div class="menu"> <a href="#" class="cancel">Cancel</a></div>
+</div>
+
+<div class="content">
+  <div class="form-info">
+    <div class="country-section">
+        <h1>Checkout</h1>
+        <label for="country">Country</label><br>
+        <select id="country" name="country">
+            <option value="Cambodia">🌐  Cambodia</option>
+            <option value="United State">🌐  United State</option>
+            <option value="France">🌐  France</option>
+        </select>
+        <p class="note">
+            KStore is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.
+        </p>
+    </div>
+    <div class="payment-method">
+        <div class="head-form">
+            <h2>Payment method</h2>
+            <p class="secure">Secure and encrypted</p>
+        </div>
+        
+        <div class="card-header">
+            <span>Card</span>
+            <span class="visa-icon">Visa</span>
+        </div>
+        <div class="form-section">
+            <div class="input-group">
+                <label for="name">Name on card</label><br><br>
+                <input type="text" id="name" placeholder="Name on card"><br><br><br>
+            </div>
+            
+            <div class="input-group">
+                <label for="card-number">Card number</label><br><br>
+                <input type="text" id="card-number" placeholder="Card number"><br><br><br>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group-half-width">
+                    <label for="expiry-date">Expiry date</label><br><br>
+                    <input type="text" id="expiry-date" placeholder="Expiry date"><br><br>
+                </div>
+                
+                <div class="input-group-half-width">
+                    <label for="cvc">CVC/CVV</label><br><br>
+                    <input type="text" id="cvc" placeholder="CVC"><br><br>
+                </div>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="save-card">
+                <label for="save-card">Securely save this card for my later purchase</label>
+            </div>
+        </div>
+    </div>
+    <div class="order-details">
+        <h3>Order Details</h3>
+        <div class="order-item">
+            <div class="img-box">
+                <img src="payment.webp" alt="Product Image">
+            </div>
+            <div class="txt-box">
+                <p>Build A Chat Application With Firebase, Flutter and Provider</p>
+            </div>
+            <div class="cost">
+                <span>$120.45</span>
+            </div>
+        </div>
+        <div class="order-item">
+            <div class="img-box">
+                <img src="payment.webp" alt="Product Image">
+            </div>
+            <div class="txt-box">
+                <p>Build A Chat Application With Firebase, Flutter and Provider</p>
+            </div>
+            <div class="cost">
+                <span>$120.45</span>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="summary-section">
+    <div class="summary">
+        <h3>Summary</h3>
+        <div class="value">
+            <p>Original Price: <span>$74.99</span></p>
+            <p>Discounts: <span>-$63.00</span></p>
+        </div>
+        
+        <p class="total">Total: <span>$11.99</span></p>
+        <button class="checkout-button" onclick="completeCheckout()">Complete Checkout</button>
+    <p class="terms">By completing your purchase, you agree to these <a href="#">Terms of Service</a>.</p>
+    </div>
+    
+</section>
+</div>
+
+</body>
+</html>
